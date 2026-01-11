@@ -21,6 +21,9 @@ const Customer=sequelize.define("Customer",{
         }
     }},
 },{
-    timestamps:true
+    timestamps:true,
+    indexes:[
+        {fields:["name"]}
+    ]
 });
 module.exports=Customer;

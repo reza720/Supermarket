@@ -1,6 +1,5 @@
 const sequelize=require("../config/database");
 const {DataTypes}=require("sequelize");
-const BillItem = require("./bill_itmes");
 
 const Bill=sequelize.define("Bill",{
     id:{type:DataTypes.INTEGER, autoIncrement:true, primaryKey:true},
