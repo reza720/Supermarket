@@ -1,3 +1,4 @@
+require("dotenv").config();
 const database=require("./config/database");
 const app=require("./app");
 const port=process.env.PORT || 3000;

@@ -5,7 +5,7 @@ const ProductValidation={
         body("name")
             .notEmpty().withMessage("Name is required"),
         body("price")
-            .notEmpty().withMessage("Nrice is required")
+            .notEmpty().withMessage("Price is required")
             .isFloat({min:0}).withMessage("Price cannot be negative"),
     ],
 
